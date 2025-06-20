@@ -40,4 +40,7 @@ window.addEventListener('message', async (message) => {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  define: {
+    "import.meta.env.VITE_CONVEX_URL": JSON.stringify(process.env.CONVEX_URL),
+  },
 }));
